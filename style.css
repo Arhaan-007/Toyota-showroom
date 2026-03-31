@@ -553,4 +553,28 @@ section.show {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    
+    #cars-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .car-card {
+        transform: none !important;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+}
+
 
