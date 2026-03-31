@@ -646,4 +646,24 @@ input, select, textarea {
   font-size: 16px;
 }
 
+/* FORCE FIX - Mobile Form Zoom */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #cars-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .car-card {
+    padding: 12px;
+  }
+
+}
+
 
