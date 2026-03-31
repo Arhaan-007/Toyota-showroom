@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toyota Showroom</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome (ONLY ONE LINE) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">TOYOTA</div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#cars">Cars</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- MAIN CONTENT: wrapped so we can reserve space for the fixed navbar without hacks -->
+<main class="site-content">
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+   <video id="heroVideo" autoplay muted playsinline preload="auto" class="hero-video">
+    <source src="video1.mp4" type="video/mp4">
+</video>
+
+    <div class="hero-content">
+      <h1>Drive Your Dream Toyota</h1>
+      <p>Luxury • Performance • Reliability</p>
+      <button>Explore Cars</button>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Toyota</h2>
+      <p>
+        Toyota is one of the most trusted automobile brands in the world, known for its durability,
+        performance, and innovation. From powerful SUVs like Fortuner to reliable sedans like Camry,
+        Toyota delivers unmatched driving experience. Our showroom provides the best Toyota models
+        with genuine pricing, smooth booking, and excellent customer support.
+      </p>
+    </div>
+  </section>
+
+  <section id="cars" class="cars-section">
+    <h2>Our Toyota Cars</h2>
+    <div id="cars-container"></div>
+  </section>
+
+
+  <section id="contact" class="contact">
+  <h2>Book Your Car</h2>
+<form class="booking-form" id="bookingForm">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<select name="car" required>
+<option value="">Select Car</option>
+
+<option>Toyota Agya</option>
+<option>Toyota Alphard</option>
+<option>Toyota Avalon</option>
+<option>Toyota Avanza</option>
+<option>Toyota Belta</option>
+<option>Toyota Camry</option>
+<option>Toyota Corolla</option>
+<option>Toyota Crown</option>
+<option>Toyota Etios</option>
+<option>Toyota Fortuner</option>
+<option>Toyota Glanza</option>
+<option>Toyota GR86</option>
+<option>Toyota Harrier</option>
+<option>Toyota Hilux</option>
+<option>Toyota Hilux GR</option>
+<option>Toyota Innova</option>
+<option>Toyota Land Cruiser</option>
+<option>Toyota Prius</option>
+<option>Toyota Raize</option>
+<option>Toyota Rumion</option>
+<option>Toyota Rush</option>
+<option>Toyota Sequoia</option>
+<option>Toyota Sienna</option>
+<option>Toyota Supra</option>
+<option>Toyota Tacoma</option>
+<option>Toyota Tundra</option>
+<option>Toyota Urban Cruiser</option>
+<option>Toyota Vellfire</option>
+<option>Toyota Wigo</option>
+<option>Toyota Yaris</option>
+
+</select>
+
+<input type="date" name="date" required>
+
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Book Now</button>
+
+</form>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-links">
+      <div>
+        <a href="#">Home</a>
+        <a href="#">News & Events</a>
+        <a href="#">Multimedia</a>
+        <a href="#">Missions</a>
+       
+      </div>
+
+      <div>
+        <a href="#">Cars</a>
+        <a href="#">Technology</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+ <div class="icons">
+  <a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://www.youtube.com" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>©️ 2026 Toyota Showroom | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+</main>
+
+<div id="carModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+<img id="carImg" class="modal-img">
+
+<div class="modal-details">
+  <h2 id="carName"></h2>
+  <p id="carPrice"></p>
+  <p id="carMileage"></p>
+  <p id="carEngine"></p>
+  <p id="carSuspension"></p>
+</div>
+
+  </div>
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>✅ Booking Successful!</h2>
+    <p>We will contact you soon.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<script src="script.js"> </script>
+
+
+</body>
+</html>
